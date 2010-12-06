@@ -1,0 +1,8 @@
+---
+# Alert when somebody in local opens session with unknown host more than 10 mins
+local: {X: 10}
+# Alert when unknown host opens session with local
+# X: {local: 0}
+# Multiple groups can be listed using the form 
+# X: {local: 0, server: 10}
+

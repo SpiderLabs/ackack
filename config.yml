@@ -1,0 +1,35 @@
+---
+# ackack configuration
+
+# Session timeout
+# Number of minutes to wait before timing out a connection without activity
+timeout: 20
+
+# FIN timeout
+# Number of minutes to wait before timing out session closed via FIN (or RST)
+fin_timeout: 1
+
+# Syslog server
+syslog: 127.0.0.1
+
+# Syslog facility
+syslog_facility: local5
+
+# Session manager report interval
+# Number of minutes between session manager reports
+# Set to 0 to disable
+session_report: 1
+
+# Reporting: alerts or all
+# Set to 1 to report all sessions, 0 to only show alerts
+report_all: 1
+
+# Syslog alert mapping
+# Only map the ones you want to use
+# Priorities are: emerg, alert, crit, err, warning, notice, info, debug
+syslog_alert: 
+    OPEN: info
+    CLOSE: info
+    TIMEOUT: info
+    ALERT: alert
+
